@@ -1,0 +1,1410 @@
+
+/* .startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+} */
+
+
+#header {
+    /* position: relative; */
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #080808;
+    backdrop-filter: blur(50px) brightness(1.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s;
+  }
+  
+  #header .header_title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 518px;
+    height: 100%;
+    border-right: 1px solid #040404;
+    cursor: pointer;
+
+  }
+  #header .header_title .header_title_img {
+    position: absolute;
+    top: 50%;
+    left: 160px;
+    transform: translateY(-50%);
+    filter: grayscale(100%);
+  }
+  
+  #header .header_title .header_title_img:hover {
+    filter: none;
+    transition: 0.3s;
+  }
+
+  #header .header_menu {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    position: absolute;
+    top: 0;
+    left: 520px;
+    width: 1400px;
+    height: 100%;
+  }
+  
+  #header .header_menu > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 100%;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    /* border-left: 1px solid #000000; */
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  #header .header_menu > div:hover {
+    filter: invert(100%);
+    border-right: #1a1a1a!important;
+    transition: 0.3s;
+  }
+  
+  #header .header_menu .menu01 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  #header .header_menu .menu02 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  #header .header_menu .menu03 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  #header .header_menu .menu04 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  #header .header_menu .menu05 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  #header .header_menu .menu06 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #header .header_menu .menu07 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  
+
+
+
+#section01{
+    position: relative;
+    height: 2050px;
+    background: url(../img/01/background.jpg);
+    margin-top: 60px;
+    
+}
+
+#section01 .side_bg_01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 198px;
+    height: 2050px;
+    z-index: 100;
+}
+
+#section01 .side_whitebg_01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 2050px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    overflow: hidden;
+}
+#section01 .side_text01 {
+    flex-direction: column;
+    position: absolute;
+    left: 9px;
+}
+
+
+#section01 .side_blackbg_01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 163px;
+    height: 2050px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#section01 .side_text02 {
+    flex-direction: column;
+    position: absolute;
+    left: 30px;
+}
+
+#section01 .heart01_01 {
+    position: absolute;
+    top: 750px;
+    left: -500px;
+    transform: scale(0.5);
+    transition: all 2s;
+}
+#section01 .heart01_01.on {
+    transform:none;
+}
+#section01 .heart02_01 {
+    position: absolute;
+    top: 0px;
+    right: -500px;
+    z-index: 1;
+    transform: scale(0.3);
+    transition: all 1s;
+}
+#section01 .heart02_01.on {
+    transform:none;
+}
+#section01 .heart03_01 {
+    position: absolute;
+    top: 200px;
+    left: -400px;
+    z-index: 2;
+    transform: scale(0.1);
+    transition: all 1s;
+}
+#section01 .heart03_01.on {
+    transform: none;
+}
+#section01 .heart04_01 {
+    position: absolute;
+    top: 1550px;
+    left: 800px;
+    z-index: 2;
+    transform: scale(0);
+    transition: all 1s;
+}
+#section01 .heart04_01.on {
+    transform: none;
+}
+#section01 .heart05_01 {
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    z-index: 2;
+}
+#section01 .heart06_01 {
+    position: absolute;
+    top: 170px;
+    left: 130px;
+    z-index: 2;
+    transform: translateX(-30px);
+    transition: all 1s;
+}
+#section01 .heart06_01.on {
+    transform:none;
+}
+#section01 .heart07_01 {
+    position: absolute;
+    top: 170px;
+    left: 160px;
+    z-index: 2;
+    transform: translateX(-60px);;
+    transition: all 1s;
+}
+#section01 .heart07_01.on {
+    transform:none;
+}
+#section01 .subtitle01_01 {
+    position: absolute;
+    top: 500px;
+    left: 125px;
+    z-index: 100;
+}
+#section01 .subtitle02_01 {
+    position: absolute;
+    top: 270px;
+    left: 1250px;
+    z-index: 100;
+    transition: all 2s;
+    opacity: 0;
+}
+#section01 .subtitle02_01.on {
+    transform:none;
+    opacity: 1;
+}
+#section01 .top_right_text_01 {
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    z-index: 100;
+}
+
+#section01 .title01_01 {
+    position: absolute;
+    top: 560px;
+    left: 125px;
+    z-index: 100;
+    height: 105px;
+    overflow: hidden;
+}
+#section01 .title01_01 img {
+    transform: translateY(105px);
+    transition: 1s;
+}
+#section01 .title01_01.on img {
+    transform: translateY(0);
+}
+
+#section01 .title02_01 {
+    position: absolute;
+    top: 560px;
+    left: 630px;
+    z-index: 100;
+    height: 105px;
+    overflow: hidden;
+}
+#section01 .title02_01 img {
+    transform: translateY(105px);
+    transition: 1s;
+}
+#section01 .title02_01.on img {
+    transform: translateY(0);
+}
+
+#section01 .title03_01 {
+    position: absolute;
+    top: 700px;
+    left: 125px;
+    z-index: 100;
+    height: 105px;
+    overflow: hidden;
+}
+#section01 .title03_01 img {
+    transform: translateY(105px);
+    transition: 1s;
+}
+#section01 .title03_01.on img {
+    transform: translateY(0);
+}
+#section01 .title04_01 {
+    position: absolute;
+    top: 840px;
+    left: 125px;
+    z-index: 100;
+    height: 105px;
+    overflow: hidden;
+}
+#section01 .title04_01 img {
+    transform: translateY(105px);
+    transition: 1s;
+}
+#section01 .title04_01.on img {
+    transform: translateY(0);
+}
+#section01 .title05_01 {
+    position: absolute;
+    top: 840px;
+    left: 730px;
+    z-index: 100;
+    height: 105px;
+    overflow: hidden;
+}
+#section01 .title05_01 img {
+    transform: translateY(105px);
+    transition: 1s;
+}
+#section01 .title05_01.on img {
+    transform: translateY(0);
+}
+
+#section01 .title_ac01_01 {
+    position: absolute;
+    top: 560px;
+    left: 510px;
+    z-index: 100;
+    width: 115px;
+    overflow: hidden;
+}
+#section01 .title_ac01_01 img {
+    transform: translateX(-115px);
+    transition: 1s;
+}
+#section01 .title_ac01_01.on img {
+    transform: translateX(0);
+}
+
+
+#section01 .title_ac02_01 {
+    position: absolute;
+    top: 700px;
+    left: 245px;
+    z-index: 100;
+    transform: scale(0);
+    transition: all 1.5s;
+}
+#section01 .title_ac02_01.on {
+    transform: none;
+}
+#section01 .title_ac03_01 {
+    position: absolute;
+    top: 850px;
+    left: 620px;
+    z-index: 100;
+    height: 94px;
+    overflow: hidden;
+}
+#section01 .title_ac03_01 img {
+    transform: translateY(-94px);
+    transition: 1s;
+}
+#section01 .title_ac03_01.on img {
+    transform: translateY(0);
+}
+
+#section01 .text01_01 {
+    position: absolute;
+    top: 1080px;
+    left: 125px;
+    z-index: 100;
+}
+#section01 .text02_01 {
+    position: absolute;
+    top: 1140px;
+    left: 125px;
+    z-index: 100;
+}
+#section01 .text03_01 {
+    position: absolute;
+    top: 1260px;
+    left: 125px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s;
+}
+#section01 .text03_01.on {
+    transform:none;
+    Opacity:1;
+}
+#section01 .text04_01 {
+    position: absolute;
+    top: 1400px;
+    left: 125px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s;
+}
+#section01 .text04_01.on {
+    transform:none;
+    Opacity:1;
+}
+#section01 .text05_01 {
+    position: absolute;
+    top: 1670px;
+    left: 920px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s;
+}
+#section01 .text05_01.on {
+    transform:none;
+    Opacity:1;
+}
+#section01 .contact_01 {
+    position: absolute;
+    top: 1650px;
+    right: 260px;
+    z-index: 100;
+}
+
+
+
+/************ section02 *******************************/
+#section02{
+    position: relative;
+    height: 1950px;
+    background: url(../img/02/background.jpg)
+}
+#section02 .line_02 {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: 100;
+}
+#section02 .bg01_02 {
+    position: absolute;
+    width: 950px;
+    height: 1060px;
+    background-color: #0f278a;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#section02 .bg02_02 {
+    position: absolute;
+    width: 805px;
+    height: 900px;
+    background-color: #0f278a;
+    top: 1060px;
+    right: 0px;
+    z-index: 1;
+}
+
+#section02 .a_02 {
+    position: absolute;
+    top: 175px;
+    left: 177px;
+    z-index: 100;
+    height: 128px;
+    overflow: hidden;
+}
+#section02 .a_02 img {
+    transform: translateY(128px);
+    transition: 1s;
+}
+#section02 .a_02.on img {
+    transform: translateY(0);
+}
+#section02 .b_02 {
+    position: absolute;
+    top: 175px;
+    left: 400px;
+    z-index: 100px;
+    height: 128px;
+    overflow: hidden;
+}
+#section02 .b_02 img {
+    transform: translateY(-128px);
+    transition: 1s;
+}
+#section02 .b_02.on img {
+    transform: translateY(0);
+}
+#section02 .o_02 {
+    position: absolute;
+    top: 380px;
+    left: 177px;
+    z-index: 100;
+    width: 161px;
+    overflow: hidden;
+}
+#section02 .o_02 img {
+    transform: translateX(-161px);
+    transition: 1s;
+}
+#section02 .o_02.on img {
+    transform: translateX(0);
+}
+#section02 .u_02 {
+    position: absolute;
+    top: 560px;
+    left: 400px;
+    z-index: 100;
+    height: 128px;
+    overflow: hidden;
+}
+#section02 .u_02 img {
+    transform: translateY(128px);
+    transition: 1s;
+}
+#section02 .u_02.on img {
+    transform: translateY(0);
+}
+#section02 .t_02 {
+    position: absolute;
+    top: 560px;
+    left: 600px;
+    z-index: 100;
+    width: 145px;
+    overflow: hidden;
+}
+#section02 .t_02 img {
+    transform: translateX(145px);
+    transition: 1s;
+}
+#section02 .t_02.on img {
+    transform: translateX(0);
+}
+#section02 .m_02 {
+    position: absolute;
+    top: 780px;
+    left: 177px;
+    z-index: 100;
+    width: 195px;
+    overflow: hidden;
+}
+#section02 .m_02 img {
+    transform: translateX(-195px);
+    transition: 1s;
+}
+#section02 .m_02.on img {
+    transform: translateX(0);
+}
+#section02 .e_02 {
+    position: absolute;
+    top: 780px;
+    left: 680px;
+    z-index: 100;
+    height: 128px;
+    overflow: hidden;
+}
+#section02 .e_02 img {
+    transform: translateY(-128px);
+    transition: 1s;
+}
+#section02 .e_02.on img {
+    transform: translateY(0);
+}
+#section02 .title_text01_02 {
+    position: absolute;
+    top: 175px;
+    left: 600px;
+    z-index: 100;
+}
+#section02 .title_text02_02 {
+    position: absolute;
+    top: 400px;
+    left: 430px;
+    z-index: 100;
+}
+#section02 .title_text03_02 {
+    position: absolute;
+    top: 580px;
+    left: 130px;
+    z-index: 100;
+}
+#section02 .title_text04_02 {
+    position: absolute;
+    top: 850px;
+    left: 400px;
+    z-index: 100;
+}
+#section02 .heart01_02 {
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    z-index: 100;
+}
+
+#section02 .title01_02 {
+    position: absolute;
+    top: 100px;
+    left: 970px;
+    z-index: 100;
+}
+#section02 .text01_02 {
+    position: absolute;
+    top: 240px;
+    left: 1060px;
+    z-index: 100;
+}
+#section02 .text02_02 {
+    position: absolute;
+    top: 400px;
+    left: 1060px;
+    z-index: 100;
+}
+#section02 .text03_02 {
+    position: absolute;
+    top: 570px;
+    left: 1060px;
+    z-index: 100;
+}
+#section02 .text04_02 {
+    position: absolute;
+    top: 850px;
+    left: 1060px;
+    z-index: 100;
+}
+
+#section02 .title02_02 {
+    position: absolute;
+    top: 1140px;
+    left: 0px;
+    z-index: 100;
+}
+#section02 .text05_02 {
+    position: absolute;
+    top: 1320px;
+    left: 130px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+#section02 .text05_02.on {
+    transform:none;
+    Opacity:1;
+}
+#section02 .text06_02 {
+    position: absolute;
+    top: 1610px;
+    left: 130px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+#section02 .text06_02.on {
+    transform:none;
+    Opacity:1;
+}
+
+#section02 .title03_02 {
+    position: absolute;
+    top: 1140px;
+    left: 1200px;
+    z-index: 100;
+}
+#section02 .text07_02 {
+    position: absolute;
+    top: 1270px;
+    left: 1200px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+#section02 .text07_02.on {
+    transform:none;
+    Opacity:1;
+}
+#section02 .text08_02 {
+    position: absolute;
+    top: 1670px;
+    left: 1200px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+#section02 .text08_02.on {
+    transform:none;
+    Opacity:1;
+}
+#section02 .bottom_txt_02 {
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    height: 30px;
+    top: 1920px;
+    left: 0px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section02 .bottom_text_02 {
+    position: absolute;
+    display: flex;
+    top: 8px;
+    left: 0px;
+    z-index: 200px;
+}
+
+
+
+/************ section03 *******************************/
+#section03{
+    position: relative;
+    height: 4050px;
+    background: url(../img/02/background.jpg)
+}
+
+#section03 .title01_03 {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+#section03 .heart01_03 {
+    position: absolute;
+    top: 80px;
+    left: -70px;
+    z-index: 100;
+    transform: scale(0);
+    transition: all 1s;
+}
+#section03 .heart01_03.on {
+    transform: none;
+}
+#section03 .title02_03 {
+    position: absolute;
+    top: 140px;
+    right: 70px;
+    z-index: 100px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s;
+}
+#section03 .title02_03.on {
+    transform: none;
+    Opacity: 1;
+}
+#section03 .background_text_03 {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+#section03 .see_01 {
+    position: absolute;
+    background-color: #374eab;
+    width: 430px; 
+    height: 127px;
+    top: 1173px;
+    left: 529px;
+    /* z-index: 50; */
+    transition: all 0.5s;
+}
+#section03 .see_01:hover {
+    background-color: #131d42;
+}
+
+#section03 .see_project01 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+#section03 .see_02 {
+    position: absolute;
+    background-color: #374eab;
+    width: 330px;
+    height: 85px;
+    top: 1085px;
+    left: 1500px;
+    transition: all 0.5s;
+    /* z-index: 50; */
+}
+#section03 .see_02:hover {
+    background-color: #131d42;
+}
+#section03 .see_project02 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+#section03 .see_03 {
+    position: absolute;
+    background-color: #374eab;
+    width: 328px;
+    height: 85px;
+    top: 2068px;
+    left: 630px;
+    /* z-index: 50; */
+    transition: all 0.5s;
+}
+#section03 .see_03:hover {
+    background-color: #131d42;
+}
+#section03 .see_project03 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+#section03 .see_04 {
+    position: absolute;
+    background-color: #374eab;
+    width: 433px;
+    height: 127px;
+    top: 2155px;
+    left: 1398px;
+    /* z-index: 50; */
+    transition: all 0.5s;
+}
+#section03 .see_04:hover {
+    background-color: #131d42;
+}
+#section03 .see_project04 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+#section03 .see_05 {
+    position: absolute;
+    background-color: #374eab;
+    width: 433px;
+    height: 127px;
+    top: 3138px;
+    left: 527px;
+    /* z-index: 50; */
+    transition: all 0.5s;
+}
+#section03 .see_05:hover {
+    background-color: #131d42;
+}
+#section03 .see_project05 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+#section03 .see_06 {
+    position: absolute;
+    background-color: #374eab;
+    width: 331px;
+    height: 94px;
+    top: 3045px;
+    left: 1500px;
+    /* z-index: 50; */
+    transition: all 0.5s;
+}
+#section03 .see_06:hover {
+    background-color: #131d42;
+}
+#section03 .see_project06 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+#section03 .see_07 {
+    position: absolute;
+    background-color: #374eab;
+    width: 440px;
+    height: 127px;
+    top: 3750px;
+    left: 1395px;
+    /* z-index: 50; */
+    transition: all 0.5s;
+}
+#section03 .see_07:hover  {
+    background-color: #131d42;
+}
+#section03 .see_project07 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+
+
+/******** image01 *********/
+#section03 .image01_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 497px;
+    height: 513px;
+    top: 640px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image01_1 {
+    position: absolute;
+    top: -20px;
+    left: -160px;
+    /* transform: translateX(-50%); */
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image01_1:hover {
+    transform: scale(1.2);
+}
+
+
+#section03 .image01_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 75px;
+    top: 1320px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image01_2 {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    z-index: 100;
+}
+
+/******** image02 *********/
+#section03 .image02_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 490px;
+    height: 690px;
+    top: 460px;
+    left: 983px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image02_1 {
+    position: absolute;
+    top: 0px;
+    left: -360px;
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image02_1:hover {
+    transform: scale(1.2);
+}
+
+#section03 .image02_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 75px;
+    top: 1320px;
+    left: 980px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image02_2 {
+    position: absolute;
+    top: -100px;
+    left: -110px;
+    z-index: 100;
+}
+
+/******** image03 *********/
+#section03 .image03_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 498px;
+    height: 700px;
+    top: 1435px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image03_1 {
+    position: absolute;
+    top: -50px;
+    left: -70px;
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image03_1:hover {
+    transform: scale(1.2);
+}
+#section03 .image03_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 75px;
+    top: 2300px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image03_2 {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: 100;
+}
+
+/******** image04 *********/
+#section03 .image04_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 493px;
+    height: 511px;
+    top: 1618px;
+    left: 984px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image04_1 {
+    position: absolute;
+    top: 0px;
+    left: -230px;
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image04_1:hover {
+    transform: scale(1.2);
+}
+#section03 .image04_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 75px;
+    top: 2300px;
+    left: 984px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image04_2 {
+    position: absolute;
+    top: -290px;
+    left: 0px;
+    z-index: 100;
+}
+
+/******** image05 *********/
+#section03 .image05_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 497px;
+    height: 513px;
+    top: 2600px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image05_1 {
+    position: absolute;
+    top: -110px;
+    left: -100px;
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image05_1:hover {
+    transform: scale(1.2);
+}
+#section03 .image05_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 80px;
+    top: 3285px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image05_2 {
+    position: absolute;
+    top: -60px;
+    left: -30px;
+    z-index: 100;
+}
+
+
+/******** image06 *********/
+#section03 .image06_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 490px;
+    height: 690px;
+    top: 2420px;
+    left: 984px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image06_1 {
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image06_1:hover {
+    transform: scale(1.2);
+}
+
+#section03 .image06_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 80px;
+    top: 3285px;
+    left: 984px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image06_2 {
+    position: absolute;
+    top: -50px;
+    left: -10px;
+    z-index: 100;
+}
+
+/******** image07 *********/
+#section03 .image07_1_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 825px;
+    height: 318px;
+    top: 3410px;
+    left: 984px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image07_1 {
+    position: absolute;
+    top: -60px;
+    left: -120px;
+    z-index: 100;
+    transition: all 0.7s;
+    transform-origin: center;
+}
+#section03 .image07_1:hover {
+    transform: scale(1.2);
+}
+#section03 .image07_2_03 {
+    position: absolute;
+    background-color: antiquewhite;
+    width: 830px;
+    height: 82px;
+    top: 3770px;
+    left: 110px;
+    z-index: 100;
+    overflow: hidden;
+}
+#section03 .image07_2 {
+    position: absolute;
+    top: -380px;
+    left: -30px;
+    z-index: 100;
+}
+
+
+
+
+
+
+/************ footer *******************************/
+#footer{
+    position: relative;
+    height: 870px;
+    background: rgb(11, 11, 11);
+    overflow: hidden;
+}
+
+#footer .title01_footer {
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    z-index: 100;
+    height: 99px;
+    overflow: hidden;
+}
+#footer .title01_footer img {
+    transform: translateY(99px);
+    transition: 1s;
+}
+#footer .title01_footer.on img {
+    transform: translateY(0);
+}
+
+#footer .title02_footer {
+    position: absolute;
+    top: 280px;
+    left: 120px;
+    z-index: 100;
+    height: 99px;
+    overflow: hidden;
+}
+#footer .title02_footer img {
+    transform: translateY(99px);
+    transition: 1s;
+}
+#footer .title02_footer.on img {
+    transform: translateY(0);
+}
+#footer .title03_footer {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    z-index: 100;
+}
+#footer .back_footer {
+    position: absolute;
+    top: 310px;
+    left: 1430px;
+    z-index: 100;
+}
+#footer .next_footer {
+    position: absolute;
+    top: 310px;
+    left: 1620px;
+    z-index: 100;
+}
+
+#footer .line01 {
+    position: absolute;
+    left: 120px;
+    top: 450px;
+    width: 1665px;
+    height: 2px;
+    background-color: #7e7e7e;
+    transition: all 1s;
+}
+/* #footer .line01.on {
+    width: 1745px;
+} */
+
+
+#footer .line02 {
+    position: absolute;
+    left: 120px;
+    top: 730px;
+    width: 1665px;
+    height: 2px;
+    background-color: #7e7e7e;
+    transition: all 1s;
+}
+/* #footer .line02.on {
+    width: 1745px;
+} */
+
+#footer .text01_footer {
+    position: absolute;
+    top: 520px;
+    left: 170px;
+    z-index: 100;
+}
+#footer .text02_footer {
+    position: absolute;
+    top: 520px;
+    left: 1200px;
+    z-index: 100;
+}
+#footer .link01_footer {
+    position: absolute;
+    top: 570px;
+    left: 1200px;
+    z-index: 100;
+}
+#footer .link02_footer {
+    position: absolute;
+    top: 600px;
+    left: 1200px;
+    z-index: 100;
+}
+#footer .link03_footer {
+    position: absolute;
+    top: 630px;
+    left: 1200px;
+    z-index: 100;
+}
+#footer .link04_footer {
+    position: absolute;
+    top: 660px;
+    left: 1200px;
+    z-index: 100;
+}
+#footer .link05_footer {
+    position: absolute;
+    top: 570px;
+    left: 1450px;
+    z-index: 100;
+}
+#footer .link06_footer {
+    position: absolute;
+    top: 600px;
+    left: 1450px;
+    z-index: 100;
+}
+#footer .link07_footer {
+    position: absolute;
+    top: 630px;
+    left: 1450px;
+    z-index: 100;
+}
+#footer .text03_footer {
+    position: absolute;
+    top: 755px;
+    left: 120px;
+    z-index: 100;
+}
+/* #footer .text04_footer {
+    position: absolute;
+    top: 755px;
+    right: 140px;
+    z-index: 100;
+} */
+
+#footer .heart01_footer {
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    z-index: 1;
+}
+#footer .heart02_footer {
+    position: absolute;
+    top: 300px;
+    right: -200px;
+    z-index: 1;
+}
+
+
+#footer .startPoint {
+    position: absolute;
+    width: 188px;
+    height: 16px;
+    top: 755px;
+    right: 140px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}   
+
+
+
